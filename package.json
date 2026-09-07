@@ -1,0 +1,30 @@
+{
+  "name": "firebase-backup",
+  "version": "1.0.0",
+  "description": "Offline local backup tool for Firebase Firestore, Storage, and Realtime Database",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "backup": "node index.js",
+    "backup:dry": "node index.js --dry-run",
+    "backup:storage": "node index.js --storage",
+    "backup:storage:dry": "node index.js --storage --dry-run",
+    "backup:firestore": "node index.js --firestore",
+    "backup:rtdb": "node index.js --rtdb",
+    "backup:all": "node index.js --all"
+  },
+  "keywords": [
+    "firebase",
+    "firestore",
+    "storage",
+    "backup",
+    "offline",
+    "realtime-database"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "firebase-admin": "^12.7.0"
+  }
+}
